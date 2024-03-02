@@ -5,6 +5,8 @@
 
 Welcome to Quick Duplicate Posts, your go-to solution for effortlessly duplicating posts, pages, products, and custom posts with just one click! Streamline your content creation process and save time with our intuitive plugin designed for WordPress users of all levels.
 
+[tutorial]Some text.[/tutorial]
+
 ## Key Features:
 
 - **One-Click Duplication:** Duplicate posts, pages, and products seamlessly with a single click.
