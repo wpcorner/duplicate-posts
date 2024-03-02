@@ -13,39 +13,9 @@
 */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if ( false === defined( 'ABSPATH' ) ) {
+    return;
 }
-
-define( 'DUPLICATE_POSTS_VERSION', '1.0.0' );
-
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-duplicate-posts-activator.php
- */
-function activate_duplicate_posts() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-duplicate-posts-activator.php';
-	Duplicate_Posts_Activator::activate();
-}
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-duplicate-posts-deactivator.php
- */
-function deactivate_duplicate_posts() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-duplicate-posts-deactivator.php';
-	Duplicate_Posts_Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_duplicate_posts' );
-register_deactivation_hook( __FILE__, 'deactivate_duplicate_posts' );
-
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-duplicate-posts.php';
-
 
 // Duplicate post, page, or product
 function duplicate_post_link($actions, $post) {
