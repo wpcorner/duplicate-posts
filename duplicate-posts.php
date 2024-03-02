@@ -6,6 +6,7 @@
  * Version:           1.0.0
  * Author:            WP Corner
  * Author URI:        https://wpcorner.co/
+ * Contributors: wpcorner, lumiblog
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wp-duplicate-posts
