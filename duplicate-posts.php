@@ -1,6 +1,6 @@
 <?php
 /*
- *Plugin Name:        WP Duplicate Posts
+ * Plugin Name:        WP Duplicate Posts
  * Plugin URI:        https://wpcorner.co/duplicate-posts
  * Description:       Easily duplicate posts, pages, products, and custom posts with a single click.
  * Version:           1.0.0
