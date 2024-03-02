@@ -34,7 +34,23 @@ Duplicated content is automatically saved as a draft, allowing users to review a
 
 The plugin intelligently duplicates post metadata, preserving key information associated with the original content. This includes custom fields, featured images, and any additional metadata, maintaining the integrity of the duplicated content.
 
-= Documentation and Support =
+== Usage ==
+
+Once the plugin has been activated, navigate to the posts', pages' or products' page. Then, choose the post you want to duplicate. Next to the Edit link, you will see the 'Duplicate' link. Click on it to open the post as a draft on a new window. The same process is true for pages, products and custom post types. 
+
+== Efficiency ==
+
+Notably, this plugin is a lightweight plugin that avoids adding unnecessary scripts to your WordPress website, ensuring efficient performance without compromising speed.
+
+== Installation ==
+
+1. Go to the WordPress admin dashboard
+3. Navigate to `Plugins` > `Add New`
+4. Search for 'Quick Duplicate Posts'
+5. Click `Install Now`
+6. Activate the plugin
+
+== Documentation and Support ==
 
 Refer to the comprehensive plugin documentation for detailed guidance on Quick Duplicate Posts' functionalities. Additionally, get support by visiting our [Support Page](#).
 
