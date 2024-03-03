@@ -1,7 +1,7 @@
 === Quick Duplicate Posts ===
 
 Contributors:      lumiblog, wpcorner
-Donate link:       https://wpcorner.co/donate/
+Donate link:       https://github.com/sponsors/lumumbapl
 Tags:              copy posts, duplicate posts, edit posts, duplicate pages, duplicate products
 Requires PHP:      7.4
 Requires at least: 5.8
