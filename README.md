@@ -5,7 +5,9 @@
 
 Welcome to Quick Duplicate Posts, your go-to solution for effortlessly duplicating posts, pages, products, and custom posts with just one click! Streamline your content creation process and save time with our intuitive plugin designed for WordPress users of all levels.
 
-[tutorial]Some text.[/tutorial]
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=nTQUwghvy5Q" target="_blank">
+ <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
+</a>
 
 ## Key Features:
 
