@@ -23,7 +23,7 @@ Welcome to Quick Duplicate Posts, your go-to solution for effortlessly duplicati
 
 ## Installation
 
-1. Download the plugin from the [Github Repository](https://github.com/lumumbapl/Schedulify) as a .zip file
+1. Download the plugin from the [Github Repository](https://github.com/wpcorner/quick-duplicate-posts/releases) as a .zip file
 2. Go to the WordPress admin dashboard
 3. Navigate to `Plugins` > `Add New`
 4. Click `Upload Plugin` and upload the .zip file
