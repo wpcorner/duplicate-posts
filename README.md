@@ -15,8 +15,6 @@ Welcome to Quick Duplicate Posts, your go-to solution for effortlessly duplicati
 - **Metadata Duplication:** Preserve post metadata, including custom fields and featured images.
 - **User-Friendly Interface:** Easily accessible "Quick Duplicate" link placed next to the "View" link for a hassle-free experience.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eEDKYQZ_wEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Get Started:
 
 1. **Installation:** Download, install, and activate the plugin in seconds.
