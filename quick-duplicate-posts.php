@@ -34,9 +34,10 @@ function qdp_duplicate_post_action() {
         $post_id = intval($_GET['post']);
         $new_post_id = qdp_duplicate_post($post_id);
 
-        // Redirect to the new duplicated post
+        // Redirect to the same page with the new duplicated post ID
         if ($new_post_id) {
-            wp_redirect(esc_url(admin_url('post.php?action=edit&post=' . $new_post_id)));
+            $redirect_url = add_query_arg(array('post' => $new_post_id), admin_url('post.php'));
+            wp_redirect(esc_url($redirect_url));
             exit;
         }
     }
