@@ -2,12 +2,12 @@
 
 /*
  * Plugin Name: Quick Duplicate Posts
- * Plugin URI: https://example.com/duplicate-posts
+ * Plugin URI: https://wpcorner.co/plugins
  * Description: Easily duplicate posts, pages, products, and custom posts with a single click.
  * Version: 1.0.0
- * Author: Example Author
- * Author URI: https://example.com/
- * Contributors: example_contributor1, example_contributor2
+ * Author: WP Corner
+ * Author URI: https://wpcorner.co
+ * Contributors: wpcorner, lumiblog
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: quick-duplicate-posts
