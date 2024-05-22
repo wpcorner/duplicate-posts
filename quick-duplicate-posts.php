@@ -21,24 +21,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Duplicate post, page, or product
 function duplicate_post_link( $actions, $post ) {
-    // Check if the post type is supported (post, page, or product)
     if ( in_array( $post->post_type, array( 'post', 'page', 'product' ), true ) ) {
-        $actions['duplicate'] = '<a href="' . esc_url( admin_url( 'admin.php?action=duplicate_post&post=' . absint( $post->ID ) ) ) . '">' . esc_html__( 'Duplicate', 'quick-duplicate-posts' ) . '</a>';
+        $nonce = wp_create_nonce( 'duplicate_post_' . $post->ID );
+        $actions['duplicate'] = '<a href="' . esc_url( admin_url( 'admin.php?action=duplicate_post&post=' . absint( $post->ID ) . '&nonce=' . $nonce ) ) . '">' . esc_html__( 'Duplicate', 'quick-duplicate-posts' ) . '</a>';
     }
     return $actions;
 }
 
+
+
 // Handle post duplication
 function duplicate_post_action() {
-    if ( isset( $_GET['action'] ) && 'duplicate_post' === sanitize_key( $_GET['action'] ) && isset( $_GET['post'] ) ) {
-        $post_id = absint( $_GET['post'] );
-        $new_post_id = duplicate_post( $post_id );
+    // Check for required parameters and nonce
+    if ( ! isset( $_GET['nonce'] ) || ! isset( $_GET['post'] ) || ! isset( $_GET['action'] ) ) {
+        wp_die( esc_html__( 'Invalid request', 'quick-duplicate-posts' ) );
+    }
 
-        // Redirect to the new duplicated post
-        if ( $new_post_id ) {
-            wp_safe_redirect( admin_url( 'post.php?action=edit&post=' . $new_post_id ) );
-            exit;
-        }
+    $action = sanitize_key( $_GET['action'] );
+    $post_id = absint( $_GET['post'] );
+    $nonce = sanitize_text_field( wp_unslash( $_GET['nonce'] ) );
+
+    // Verify nonce
+    if ( 'duplicate_post' !== $action || ! wp_verify_nonce( $nonce, 'duplicate_post_' . $post_id ) ) {
+        wp_die( esc_html__( 'Nonce verification failed', 'quick-duplicate-posts' ) );
+    }
+
+    $new_post_id = duplicate_post( $post_id );
+
+    // Redirect to the new duplicated post
+    if ( $new_post_id ) {
+        wp_safe_redirect( admin_url( 'post.php?action=edit&post=' . $new_post_id ) );
+        exit;
     }
 }
 
